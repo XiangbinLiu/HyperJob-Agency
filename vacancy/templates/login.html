@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<form method="post" action="login">{% csrf_token %}
+  <table>{{ form.as_table }}</table>
+  <button type="submit">Login</button>
+</form>
+</html>

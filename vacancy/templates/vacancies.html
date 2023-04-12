@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vacancies</title>
+</head>
+
+
+{% block content %}
+
+{% for item in data %}
+<div>
+    {{item.author.username}}: {{item.description}}
+
+</div>
+{% endfor %}
+
+{% endblock %}
+</html>
